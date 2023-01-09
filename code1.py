@@ -10,3 +10,6 @@ Iris_Data['target'] = Iris_Data['target'].map({0: "setosa", 1:"versicolor", 2:"v
 
 X_Data = Iris_Data.iloc[:, :-1]
 Y_Data = Iris_Data.iloc[:, [-1]]
+
+"""data -> csv"""
+Iris_Data.to_csv('iris_classification.csv')
